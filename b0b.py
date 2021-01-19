@@ -4,7 +4,7 @@ import socket
 import subprocess
 import threading
 import sys
-bind_ip="192.168.43.33"
+bind_ip="127.0.0.1"
 bind_port=2222
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.bind((bind_ip,bind_port))
