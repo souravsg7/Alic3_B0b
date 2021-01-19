@@ -11,8 +11,9 @@ try:
 	message=input("$")
 	while True:	
 		client.send(message.encode())
-		response=s.recv(4096).decode()
+		response=client.recv(4096).decode()
 		print(response)
+		message=input("$")
 	client.close()
 
 except:
